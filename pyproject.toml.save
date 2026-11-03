@@ -1,0 +1,17 @@
+[project]
+name = "rag-learning-practice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "mehedi-hassan-dev", email = "mehedi.hassan.coder@gmail.com" }
+]
+requires-python = ">=3.14"
+dependenci
+[project.scripts]
+rag-learning-practice = "rag_learning_practice:main"
+ source /home/mehedi-hassan/rag-learning-practice/.venv/bin/activate
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
