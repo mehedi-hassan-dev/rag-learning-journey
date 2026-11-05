@@ -6,14 +6,18 @@ readme = "README.md"
 authors = [
     { name = "mehedi-hassan-dev", email = "mehedi.hassan.coder@gmail.com" }
 ]
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.15.1",
     "ipykernel>=7.4.0",
     "langchain>=1.4.8",
     "langchain-community>=0.4.2",
     "langchain-core>=1.7.4",
     "pymupdf>=2.1",
     "pypdf>=6.21.4",
+    "sentence-transformers>=6.2.0",
+    "torch==2.8.0+cpu",
 ]
 
 [project.scripts]
@@ -22,3 +26,14 @@ rag-learning-practice = "rag_learning_practice:main"
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
