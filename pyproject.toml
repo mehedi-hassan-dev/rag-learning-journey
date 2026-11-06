@@ -14,8 +14,10 @@ dependencies = [
     "langchain>=1.4.8",
     "langchain-community>=0.4.2",
     "langchain-core>=1.7.4",
+    "langchain-google-genai>=4.4.3",
     "pymupdf>=2.1",
     "pypdf>=6.21.4",
+    "python-dotenv>=1.2.4",
     "sentence-transformers>=6.2.0",
     "torch==2.8.0+cpu",
 ]
