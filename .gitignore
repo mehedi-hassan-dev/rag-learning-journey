@@ -11,3 +11,12 @@ wheels/
 
 # add evn file
 .env
+
+# add models
+models/
+
+# add chroma_db
+my_chroma_db/
+
+# HuggingFace Cache
+.cache/
