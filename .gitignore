@@ -20,3 +20,6 @@ my_chroma_db/
 
 # HuggingFace Cache
 .cache/
+
+# chromaDB ignore
+all_vector_stores/
