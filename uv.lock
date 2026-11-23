@@ -568,6 +568,23 @@ wheels = [
 ]
 
 [[package]]
+name = "groq"
+version = "1.7.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/0c/c1/20cb719bc21aa22df185c4aa60abc17680d7067d41fe0ca3fda98b75822b/groq-1.7.0.tar.gz", hash = "sha256:d582dbb3f071b92ca339baba83af9f57ba6f46a51c34b04565d7cb9badb2785b", size = 158918, upload-time = "2026-08-26T02:36:19.734Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3f/f6/c3d8ea3194d7d7d8292edd4dbb4b6832d29c2eab04887dda4a742e83902c/groq-1.7.0-py3-none-any.whl", hash = "sha256:cb1518f823423d4e52445859eb7d2918a927794cec12f8d5e50d9161e3690fc8", size = 143797, upload-time = "2026-08-26T02:36:18.497Z" },
+]
+
+[[package]]
 name = "grpcio"
 version = "1.85.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1044,6 +1061,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/2a/fb/2e54776985a875277d24280c7241d65ab6307fdf1be8465fe0500879a32b/langchain_google_genai-4.4.3.tar.gz", hash = "sha256:171ca3a9a7707359def977004b99a84a963193e70e8b2c420ad2109e02ddc8ae", size = 393905, upload-time = "2026-11-04T19:09:27.166Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/63/2b/4dfadaecae860de0bc06b01bdbde09f4c462cf2542bac3d63974e5215507/langchain_google_genai-4.4.3-py3-none-any.whl", hash = "sha256:a3906f1813aee36e9e67e384b6d7bf6cacd6cd44610beef35ec1ae4fb23dd2a2", size = 82444, upload-time = "2026-11-04T19:09:25.822Z" },
+]
+
+[[package]]
+name = "langchain-groq"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "groq" },
+    { name = "langchain-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d9/ed/85e0ccd6d86df1b98a4214dd130b52c2f2a0252f96a0abbfaef669142c3b/langchain_groq-1.2.0.tar.gz", hash = "sha256:b87117d16a16f68c9c2ca0f31820b46f7064c19563baca848893fcb0bcb41a97", size = 192627, upload-time = "2026-11-15T21:48:55.242Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/a8/94b6eb0d988034289f65b4728b543da7e25ec7a90dfe4bf29b4de3c69de9/langchain_groq-1.2.0-py3-none-any.whl", hash = "sha256:681901df6ec7cff0fc0b0c7dfe7d917f22ea0ec6dcd3ed2af918fdb2238cf99b", size = 21445, upload-time = "2026-11-15T21:48:53.995Z" },
 ]
 
 [[package]]
@@ -1909,6 +1939,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-google-genai" },
+    { name = "langchain-groq" },
     { name = "langchain-huggingface" },
     { name = "langchain-text-splitters" },
     { name = "pymupdf" },
@@ -1929,6 +1960,7 @@ requires-dist = [
     { name = "langchain-community", specifier = ">=0.4.2" },
     { name = "langchain-core", specifier = ">=1.7.4" },
     { name = "langchain-google-genai", specifier = ">=4.4.3" },
+    { name = "langchain-groq", specifier = ">=1.2.0" },
     { name = "langchain-huggingface", specifier = ">=1.2.3" },
     { name = "langchain-text-splitters", specifier = ">=1.1.3" },
     { name = "pymupdf", specifier = ">=2.1" },
