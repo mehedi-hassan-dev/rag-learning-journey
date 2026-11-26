@@ -23,3 +23,6 @@ my_chroma_db/
 
 # chromaDB ignore
 all_vector_stores/
+
+# PDF Document
+all_documents
